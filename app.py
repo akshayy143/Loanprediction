@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle as pk
+#python -m streamlit run app.py
 
 model = pk.load(open('model.pkl','rb'))
 scaler = pk.load(open('scaler.pkl','rb'))
