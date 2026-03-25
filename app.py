@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
-
+import pickle as pk
+import sklearn
 #python -m streamlit run app.py
 
-# model = pk.load(open('model.pkl','rb'))
-# scaler = pk.load(open('scaler.pkl','rb'))
+model = pk.load(open('model.pkl','rb'))
+scaler = pk.load(open('scaler.pkl','rb'))
 
 
-model = pd.read_pickle('model.pkl')
-scaler = pd.read_pickle('scaler.pkl')
+
 
 st.header('Loan Predcition App')
 
